@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
 	font-family: 'AutoSignature'; /* 폰트 이름 설정 */
-	src: url('/docs/fonts/aAutoSignature.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 설정 */
+	src: url('fonts/aAutoSignature.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 설정 */
   }
 @font-face {
 	font-family: 'SUIT-Regular';

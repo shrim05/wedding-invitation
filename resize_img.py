@@ -2,7 +2,7 @@ import glob
 from pathlib import Path
 from PIL import Image, ImageOps
 
-BASE_PATH = Path("./docs/images")
+BASE_PATH = Path("/docs/images")
 if __name__ == "__main__":
     images = glob.glob(f"{BASE_PATH}/*.jpg")
     for img in images:
