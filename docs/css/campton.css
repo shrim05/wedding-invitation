@@ -1,0 +1,19 @@
+@font-face {
+	font-family:'campton';
+	font-style:normal;
+	font-weight:100;
+	src:url(/fonts/campton/Campton-LightDEMO.eot);
+	src:url(/fonts/campton/Campton-LightDEMO.eot?#iefix) format('embedded-opentype'), 
+		url(/fonts/campton/Campton-LightDEMO.woff) format('woff'),
+		url(/fonts/campton/Campton-LightDEMO-2.otf) format('opentype')
+}
+
+@font-face {
+	font-family:'campton';
+	font-style:normal;
+	font-weight:600;
+	src:url(/fonts/campton/Campton-BoldDEMO.eot);
+	src:url(/fonts/campton/Campton-BoldDEMO.eot?#iefix) format('embedded-opentype'), 
+		url(/fonts/campton/Campton-BoldDEMO.woff) format('woff'),
+		url(/fonts/campton/Campton-BoldDEMO-2.otf) format('opentype')
+}

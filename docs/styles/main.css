@@ -1,0 +1,863 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'AutoSignature'; /* 폰트 이름 설정 */
+	src: url('/docs/fonts/aAutoSignature.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 설정 */
+  }
+@font-face {
+	font-family: 'SUIT-Regular';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	font-size: 4.445vmin;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.footer {
+	font-family: 'notosanskr';
+	color: #564861;
+	text-align: right;
+	font-size: 16px;
+	margin: 1rem;
+	padding: 1rem;
+}
+.contain {
+	padding: 0 1rem;
+}
+
+.contain:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.tb {
+	display: table;
+	width: 100%;
+}
+
+.ib {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pop-wrap {
+	display: none;
+	z-index: 1003;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.pop-inner {
+	position: relative;
+	box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
+}
+
+.pop-head {
+	position: relative;
+	background: #fff;
+}
+
+.pop-body {
+	position: relative;
+	background: #fff;
+	padding: 1.875rem 0;
+}
+
+.accountCopy .pop-head {
+	font-family: "Noto Sans KR";
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 3.125rem;
+	text-align: center;
+	color: #111;
+	border-bottom: 1px solid #55aaba;
+}
+
+.accountCopy .pop-body {
+	padding: 0 0 2.5rem;
+}
+
+.accountCopy .form .group {
+	padding: 0 2rem;
+}
+
+.accountCopy .form .group.col-2 {
+	padding: 2.5rem 2rem 0.625rem;
+}
+
+.accountCopy .form .group.col-2>div:first-child {
+	float: left;
+	font-family: 'Noto Sans KR';
+	font-size: 0.875rem;
+}
+
+.accountCopy .form .group.col-2>div:last-child {
+	float: right;
+	;
+	font-family: 'Noto Sans KR';
+	font-size: 0.875rem;
+}
+
+.accountCopy .form .group.col-2>div>span {
+	font-family: 'Noto Sans KR';
+	font-size: 0.875rem;
+	color: #666;
+}
+
+.accountCopy .form .group:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.accountCopy .form .input {
+	font-family: 'Noto Sans KR';
+	font-size: 1rem;
+	width: 77%;
+	height: 2.5rem;
+	border: 1px solid #eee;
+	background: #f9f9f9;
+	padding-left: 0.875rem;
+}
+
+.accountCopy .form .btn {
+	background: #55aaba;
+	color: #fff;
+	height: 2.5rem;
+	width: 3.75rem;
+	font-size: 0.813rem;
+	font-family: 'Noto Sans KR';
+}
+
+.accountCopy .close-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 3.375rem;
+	height: 3.125rem;
+	background-size: 0.875rem;
+	font-size: 1;
+	line-height: 0;
+	font-family: SUIT-Regular; 
+	color: #3b3a3a;
+}
+
+.copyComplete .pop-body {
+	padding: 0 0 2.5rem;
+}
+
+.copyComplete .form .group {
+	padding: 2.5rem 2rem;
+	text-align: center;
+}
+
+.copyComplete .form .group .tit {
+	padding: 0 2rem 0.5rem;
+	font-family: 'Noto Sans KR';
+	font-size: 1rem;
+	color: #111;
+}
+
+.copyComplete .form .group .bkinfo {
+	padding: 0 2rem;
+	line-height: 1.1;
+}
+
+.copyComplete .form .group .bkinfo span {
+	font-family: 'Noto Sans KR';
+	font-size: 0.875rem;
+	color: #666;
+}
+
+.copyComplete .buttons .btn {
+	display: block;
+	float: left;
+	width: 100%;
+	background: #fff;
+	font-family: "Noto Sans KR";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 3.125rem;
+	text-align: center;
+	color: #111;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	text-decoration: none;
+}
+
+.info-section .vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.info-section .vertical-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+}
+
+.info-section .vertical-item {
+	flex-shrink: 0;
+
+}
+
+.invite-section {
+	padding: 3.125rem 0;
+	font-family: SUIT-Regular;
+}
+
+.invite-section .textarea {
+	font-family: SUIT-Regular;
+	margin-bottom: 2.813rem;
+	font-size: 0.813rem;
+	font-weight: 300;
+	line-height: 1.5rem;
+	color: #111;
+	text-align: center;
+}
+
+.invite-section .info {
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+}
+
+.invite-section .info .row {
+	display: table-row;
+}
+
+.invite-section .info p {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.invite-section .info .parent {
+	font-size: 0;
+	text-align: right;
+}
+
+.invite-section .info .parent .gt-span {
+	font-family: SUIT-Regular;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0.813rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	text-align: center;
+	white-space: pre-wrap;
+}
+
+.invite-section .info .parent .bul {
+	position: relative;
+	width: 0.750rem;
+	height: 1.5rem;
+	overflow: hidden;
+}
+
+.invite-section .info .parent .bul:after {
+	font-family: inherit;
+	content: '.';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: block;
+	font-size: 0.813rem;
+	font-weight: 400;
+	line-height: 1;
+	text-align: center;
+}
+
+.invite-section .info .default {
+	font-family: SUIT-Regular;
+	height: 1.5rem;
+	font-size: 0.625rem;
+	font-weight: 300;
+	line-height: 1.625rem;
+}
+
+.invite-section .info .gwangye {
+	font-family: SUIT-Regular;
+	height: 1.5rem;
+	padding-left: 0.188rem;
+	font-size: 0.625rem;
+	font-weight: 300;
+	line-height: 1.625rem;
+}
+
+.invite-section .info .couple {
+	font-family: SUIT-Regular;
+	padding-left: 0.313rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	text-align: left;
+	white-space: pre-wrap;
+}
+
+
+.banner-section .txt {
+	font-family: SUIT-Regular;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 6.250rem;
+	text-align: center;
+	font-size: 0.625rem;
+	font-weight: 200;
+	color: #000000;
+	letter-spacing: 0.4em;
+}
+
+
+.calendar-section {
+	padding: 1.3rem 0 1rem;
+	background-color: #f4f4f4;
+}
+
+.calendar-section .tb {
+	font-family: SUIT-Regular;
+	padding: 1.3rem 1rem;
+	background-color: #f1eaea;
+}
+
+.calendar-wrap {
+	position: relative;
+}
+
+.calendar-wrap .day-time {
+	position: absolute;
+	right: 1.563rem;
+	top: 0.813rem;
+	white-space: nowrap;
+}
+
+.calendar-wrap .day-time span {
+	font-family: SUIT-Regular;
+	font-size: 0.875rem;
+	line-height: 2.5rem;
+	color: #111;
+}
+
+#calendar {
+	/* background: #fff; */
+	border-radius: 10px;
+	padding-bottom: 0.938rem;
+}
+
+.ui-datepicker-calendar thead,
+.ui-datepicker-year,
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	display: none;
+}
+
+.ui-datepicker {
+	padding: 0 2.3rem;
+}
+
+.ui-datepicker-header {
+	margin: 0 -1.3rem 0.938rem;
+}
+
+.ui-datepicker-title {
+	padding: 0.625rem 1.563rem 0;
+	border-bottom: 1px solid #eee;
+}
+
+.ui-datepicker-month {
+	font-family: SUIT-Regular;
+	font-size: 0.750rem;
+	line-height: 2.5rem;
+}
+
+.ui-datepicker-month strong {
+	font-family: SUIT-Regular;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.ui-datepicker-calendar {
+	text-align: center;
+	table-layout: fixed;
+}
+
+.ui-datepicker-calendar tbody td {
+	padding: 0.344rem;
+	font-size: 0;
+	line-height: 0;
+	pointer-events: none;
+}
+
+.ui-datepicker-calendar tbody td span,
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	margin: 0 auto;
+	width: 1.875rem;
+	height: 1.875rem;
+	text-decoration: none;
+	font-family: "campton";
+	font-size: 0.625rem;
+	line-height: 1.875rem;
+	color: #777;
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
+
+.ui-datepicker-calendar tbody td.ui-datepicker-week-end:first-child span,
+.ui-datepicker-calendar tbody td.ui-datepicker-week-end:first-child a {
+	color: #ff6666;
+}
+
+.ui-datepicker-calendar tbody td.ui-datepicker-current-day span,
+.ui-datepicker-calendar tbody td.ui-datepicker-current-day a {
+	background-color: #e7bbbb;
+	color: #000000 !important;
+}
+
+.gallery-section {
+	padding: 3.125rem 0;
+}
+
+.gallery-section .ex {
+	margin-top: 1.125rem;
+	font-size: 0.750rem;
+	font-weight: 400;
+	line-height: 1;
+	text-align: center;
+	color: #111;
+}
+
+.gallery-section .contain {
+	padding: 0 16px;
+	overflow: hidden;
+}
+
+.gallery-section .contain .lSSlideOuter {
+	overflow: hidden;
+}
+
+.gallery-section .gallery li .box {
+	background: #f4f4f4;
+}
+
+.lSSlideOuter .lSPager.lSGallery a {
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	overflow: hidden;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.lSSlideOuter .lSPager.lSGallery a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+/* .lSSlideOuter .lSPager.lSGallery .active a:after{
+	display:none;
+} */
+.lSSlideOuter .lSPager.lSGallery img {
+	/* display:none; */
+	position: absolute;
+	left: 50%;
+	top: 0;
+	max-width: inherit;
+	height: 100%;
+	transform: translate(-50%, 0);
+}
+
+.tbanner-section {
+	padding: 2.188rem 0;
+}
+
+.tbanner-section .text {
+	font-size: 0.750rem;
+	font-weight: 400;
+	line-height: 1.500rem;
+	text-align: center;
+	letter-spacing: 0.1em;
+	white-space: pre-wrap;
+}
+
+.tbanner-section .text.vertical {
+	white-space: normal;
+}
+
+.tbanner-section .text.vertical .vt {
+	display: block;
+	width: 0.750rem;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	letter-spacing: 0;
+	line-height: 1rem;
+}
+
+.tbanner-section .text.vertical .vt .space {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0.250rem 0;
+}
+
+.location-section {
+	padding: 3.125rem 0 3.124rem;
+	background-color: #f4f4f4;
+}
+
+.location-section .head {
+	position: relative;
+	min-height: 2.250rem;
+	padding: 1rem;
+	background: #fafafa;
+	box-sizing: content-box;
+}
+
+.location-section .head .tit {
+	margin-bottom: 0.375rem;
+	font-family: SUIT-Regular;
+	font-size: 0.938rem;
+	font-weight: 600;
+	line-height: 1.125rem;
+	color: #111;
+	padding-right: 3rem;
+	word-break: keep-all;
+}
+
+.location-section .head .txt {
+	padding-right: 3rem;
+}
+
+.location-section .head .txt p {
+	font-family: SUIT-Regular;
+	font-size: 0.813rem;
+	font-weight: 300;
+	line-height: 1.125rem;
+	color: #777;
+}
+
+.location-section .map {
+	width: 100%;
+	height: 13.125rem;
+}
+
+.location-section .link {
+	padding: 1.3rem 0 0.938rem;
+	background: #fafafa;
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+}
+
+.location-section .link li {
+	display: inline-block;
+	vertical-align: top;
+	width: 3.750rem;
+	padding: 0 0.625rem;
+	box-sizing: content-box;
+}
+
+.location-section .link a {
+	position: relative;
+	display: block;
+	padding-top: 3.438rem;
+	font-family: "Noto Sans KR";
+	font-size: 0.688rem;
+	font-weight: 400;
+	line-height: 1rem;
+	color: #111;
+	text-decoration: none;
+}
+
+.location-section .link a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -1.563rem;
+	width: 3.125rem;
+	height: 3.125rem;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 3.125rem;
+}
+
+.location-section .info {
+	padding-top: 0.625rem;
+	background: #f4f4f4;
+}
+
+.location-section .info .contain {
+	padding-top: 1.3rem;
+	padding-bottom: 1.3rem;
+	background: #fff;
+}
+
+.location-section .info dl {
+	padding: 0.625rem 0;
+	border-bottom: 1px solid #eee;
+}
+
+.location-section .info dl:first-child {
+	padding-top: 0;
+}
+
+.location-section .info dt {
+	margin-bottom: 0.250rem;
+	font-family: "Noto Sans KR";
+	font-size: 0.813rem;
+	font-weight: 400;
+	line-height: 1.3rem;
+	color: #111;
+}
+
+.location-section .info dd {
+	font-family: "Noto Sans KR";
+	font-size: 0.750rem;
+	font-weight: 300;
+	line-height: 1rem;
+	color: #777;
+	white-space: pre-wrap;
+}
+
+
+.location-section .map-img {
+	padding: 1.563rem 1rem 1.875rem;
+	background: #fff;
+}
+
+.account-section {
+	padding: 3.125rem 0;
+	text-align: center;
+}
+
+.account-section .textarea {
+	margin-bottom: 3.125rem;
+	font-family: 'KoPub Batang';
+	font-size: 0.750rem;
+	font-weight: 300;
+	line-height: 1rem;
+	text-align: center;
+	color: #777;
+}
+
+.account-section .row {
+	margin-top: 1.25rem;
+}
+
+.account-section .row:first-child {
+	margin-top: 0;
+}
+
+.account-section .row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.account-section .slsb-tit {
+	float: left;
+	font-family: "Noto Sans KR";
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 2.50rem;
+	color: #111;
+}
+
+.account-section .account-btn {
+	float: left;
+}
+
+.main .title {
+	position: relative;
+	padding-top: 0.938rem;
+	margin-bottom: 2.5rem;
+	font-family: SUIT-Regular;
+	font-size: 0.888rem;
+	font-weight: 700;
+	line-height: 1.3rem;
+	text-align: center;
+	color: #111;
+	letter-spacing: 0.4em;
+}
+
+.main .title:after {
+	content: '';
+	position: absolute;
+	left: 3.438rem;
+	top: 0;
+	display: block;
+	width: calc(100% - 6.875rem);
+	height: 1px;
+	background-color: #0c0c0c;
+}
+
+.main .tbanner-section .text.vertical {
+	padding-bottom: 2.188rem;
+	background-size: 7.750rem auto;
+}
+
+.main .info-section {
+	height: 100%;
+	background-color: #f4f4f4;
+}
+
+.main .info-section .vertical-center {
+	height: 100%;
+	padding: 2.625rem 0 6.625rem;
+}
+
+.main .info-section .vertical-item {
+	width: 100%;
+}
+
+.main .info-section .vertical-item.photo img {
+	width: 100%;
+	align-items: center;
+	padding-left: 1.5rem;
+    padding-right: 1.5rem;
+	position: relative;
+}
+
+.main .info-section .vertical-item .info {
+	margin-top: 1.125rem;
+	
+}
+
+.vertical-item .name {
+	font-weight: 500;
+	font-family: AutoSignature;
+	font-size: 7vw;
+	text-align: center;
+	word-break: break-all;
+	width: 100%;
+	font-weight: inherit;
+	white-space: normal;
+	padding-bottom: 1rem;
+}
+
+.vertical-item .info {
+	font-family: SUIT-Regular;
+	/* font-size: 1.125rem; */
+	text-align: center;
+	word-break: break-all;
+	width: 100%;
+	white-space: normal;
+}
+
+
+/* 지도 반응형 */
+.map-container {
+	width: 450px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.map {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+}
+
+.map-info {
+	overflow: hidden;
+	padding: 7px 11px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0px 0px 2px 2px;
+	background-color: rgb(249, 249, 249);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.map-info img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	.map-container {
+		width: 80%;
+	}
+
+	.map-info {
+		padding: 5px 8px;
+	}
+}
+.location-section .tinfo {
+	font-family: SUIT-Regular;
+}
+
+.tinfo dt {
+	font-family: SUIT-Regular;
+	font-size: 0.9rem;
+}
+
+.tinfo dd {
+	font-family: SUIT-Regular;
+	font-size: 0.9rem;
+	color: #0c0505;
+	white-space: pre-wrap;
+}
+
+.modern-button {
+	background-color: #f4f4f4;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: "Noto Sans KR";
+	cursor: pointer;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+}
+
+.modern-button:hover {
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
