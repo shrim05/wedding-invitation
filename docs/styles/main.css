@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
 	font-family: 'AutoSignature'; /* 폰트 이름 설정 */
-	src: url('fonts/aAutoSignature.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 설정 */
+	src: url('../fonts/aAutoSignature.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 설정 */
   }
 @font-face {
 	font-family: 'SUIT-Regular';
@@ -9,7 +9,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 
 html {
 	-webkit-text-size-adjust: none;
@@ -775,7 +774,7 @@ body {
 }
 
 .vertical-item .info {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	/* font-size: 1.125rem; */
 	text-align: center;
 	word-break: break-all;
