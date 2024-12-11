@@ -3,13 +3,6 @@
 	font-family: 'AutoSignature'; /* 폰트 이름 설정 */
 	src: url('../fonts/aAutoSignature.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 설정 */
   }
-@font-face {
-	font-family: 'SUIT-Regular';
-	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-}
-
 html {
 	-webkit-text-size-adjust: none;
 	-moz-text-size-adjust: none;
@@ -25,8 +18,8 @@ body {
 }
 
 .footer {
-	font-family: 'notosanskr';
-	color: #564861;
+	font-family: Iropke Batang;
+	color: #848485;
 	text-align: right;
 	font-size: 16px;
 	margin: 1rem;
@@ -79,7 +72,7 @@ body {
 }
 
 .accountCopy .pop-head {
-	font-family: "Noto Sans KR";
+	font-family: Iropke Batang;
 	font-size: 1.125rem;
 	font-weight: 400;
 	line-height: 3.125rem;
@@ -152,9 +145,9 @@ body {
 	width: 3.375rem;
 	height: 3.125rem;
 	background-size: 0.875rem;
-	font-size: 1;
+	font-size: 0.782rem;
 	line-height: 0;
-	font-family: SUIT-Regular; 
+	font-family: Iropke Batang; 
 	color: #3b3a3a;
 }
 
@@ -190,7 +183,7 @@ body {
 	float: left;
 	width: 100%;
 	background: #fff;
-	font-family: "Noto Sans KR";
+	font-family: Iropke Batang;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 3.125rem;
@@ -232,11 +225,11 @@ body {
 
 .invite-section {
 	padding: 3.125rem 0;
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 }
 
 .invite-section .textarea {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	margin-bottom: 2.813rem;
 	font-size: 0.813rem;
 	font-weight: 300;
@@ -266,7 +259,7 @@ body {
 }
 
 .invite-section .info .parent .gt-span {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	display: inline-block;
 	vertical-align: top;
 	font-size: 0.813rem;
@@ -298,7 +291,7 @@ body {
 }
 
 .invite-section .info .default {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	height: 1.5rem;
 	font-size: 0.625rem;
 	font-weight: 300;
@@ -306,7 +299,7 @@ body {
 }
 
 .invite-section .info .gwangye {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	height: 1.5rem;
 	padding-left: 0.188rem;
 	font-size: 0.625rem;
@@ -315,18 +308,18 @@ body {
 }
 
 .invite-section .info .couple {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	padding-left: 0.313rem;
 	font-size: 1rem;
 	font-weight: 400;
-	line-height: 1.5rem;
+	line-height: 1.3rem;
 	text-align: left;
 	white-space: pre-wrap;
 }
 
 
 .banner-section .txt {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
@@ -344,10 +337,12 @@ body {
 	background-color: #f4f4f4;
 }
 
-.calendar-section .tb {
-	font-family: SUIT-Regular;
+.calendar-section .tb .txt{
+	font-family: Iropke Batang;
+	font-weight: 400;
 	padding: 1.3rem 1rem;
-	background-color: #f1eaea;
+	text-align: center;
+	letter-spacing: 0.2em;
 }
 
 .calendar-wrap {
@@ -362,7 +357,7 @@ body {
 }
 
 .calendar-wrap .day-time span {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 0.875rem;
 	line-height: 2.5rem;
 	color: #111;
@@ -395,13 +390,13 @@ body {
 }
 
 .ui-datepicker-month {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 0.750rem;
 	line-height: 2.5rem;
 }
 
 .ui-datepicker-month strong {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 1.3rem;
 	font-weight: bold;
 }
@@ -551,7 +546,7 @@ body {
 
 .location-section .head .tit {
 	margin-bottom: 0.375rem;
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 0.938rem;
 	font-weight: 600;
 	line-height: 1.125rem;
@@ -565,7 +560,7 @@ body {
 }
 
 .location-section .head .txt p {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 0.813rem;
 	font-weight: 300;
 	line-height: 1.125rem;
@@ -597,7 +592,7 @@ body {
 	position: relative;
 	display: block;
 	padding-top: 3.438rem;
-	font-family: "Noto Sans KR";
+	font-family: Iropke Batang;
 	font-size: 0.688rem;
 	font-weight: 400;
 	line-height: 1rem;
@@ -641,7 +636,7 @@ body {
 
 .location-section .info dt {
 	margin-bottom: 0.250rem;
-	font-family: "Noto Sans KR";
+	font-family: Iropke Batang;
 	font-size: 0.813rem;
 	font-weight: 400;
 	line-height: 1.3rem;
@@ -649,7 +644,7 @@ body {
 }
 
 .location-section .info dd {
-	font-family: "Noto Sans KR";
+	font-family: Iropke Batang;
 	font-size: 0.750rem;
 	font-weight: 300;
 	line-height: 1rem;
@@ -692,15 +687,6 @@ body {
 	clear: both;
 }
 
-.account-section .slsb-tit {
-	float: left;
-	font-family: "Noto Sans KR";
-	font-size: 0.875rem;
-	font-weight: 400;
-	line-height: 2.50rem;
-	color: #111;
-}
-
 .account-section .account-btn {
 	float: left;
 }
@@ -709,7 +695,7 @@ body {
 	position: relative;
 	padding-top: 0.938rem;
 	margin-bottom: 2.5rem;
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 0.888rem;
 	font-weight: 700;
 	line-height: 1.3rem;
@@ -775,7 +761,7 @@ body {
 
 .vertical-item .info {
 	font-family: Iropke Batang;
-	/* font-size: 1.125rem; */
+	font-size: 1rem;
 	text-align: center;
 	word-break: break-all;
 	width: 100%;
@@ -824,19 +810,20 @@ body {
 	}
 }
 .location-section .tinfo {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 }
 
 .tinfo dt {
-	font-family: SUIT-Regular;
+	font-family: Iropke Batang;
 	font-size: 0.9rem;
 }
 
 .tinfo dd {
-	font-family: SUIT-Regular;
-	font-size: 0.9rem;
+	font-family: Iropke Batang;
+	font-size: 0.8rem;
 	color: #0c0505;
 	white-space: pre-wrap;
+	
 }
 
 .modern-button {
@@ -848,7 +835,7 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	font-family: "Noto Sans KR";
+	font-family: Iropke Batang;
 	cursor: pointer;
 	border-radius: 4px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
