@@ -21,7 +21,7 @@ body {
 	font-family: Iropke Batang;
 	color: #848485;
 	text-align: right;
-	font-size: 16px;
+	font-size: 0.67rem;
 	margin: 1rem;
 	padding: 1rem;
 }
@@ -58,6 +58,9 @@ body {
 .pop-inner {
 	position: relative;
 	box-shadow: 0 8px 8px rgba(0, 0, 0, .2);
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .pop-head {
@@ -138,17 +141,28 @@ body {
 }
 
 .accountCopy .close-btn {
+	background-color: #f9f3ed;
+	color: #fff;
+	border-radius: 4px;
 	position: absolute;
+	margin: 0.4rem 0.4rem;
 	right: 0;
 	top: 0;
 	display: block;
-	width: 3.375rem;
-	height: 3.125rem;
-	background-size: 0.875rem;
+	width: 3.175rem;
+	height: 2.125rem;
+	background-size: 1rem;
 	font-size: 0.782rem;
 	line-height: 0;
 	font-family: Iropke Batang; 
+	box-shadow: 0px 2px 4px rgb(199, 186, 186);
 	color: #3b3a3a;
+	cursor: pointer;
+}
+.close-btn:hover{
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .copyComplete .pop-body {
@@ -224,7 +238,7 @@ body {
 }
 
 .invite-section {
-	padding: 3.125rem 0;
+	padding: 3.125rem 0 3.8rem;
 	font-family: Iropke Batang;
 }
 
@@ -334,13 +348,13 @@ body {
 
 .calendar-section {
 	padding: 1.3rem 0 1rem;
-	background-color: #f4f4f4;
+	background-color: #feefef;
 }
 
 .calendar-section .tb .txt{
 	font-family: Iropke Batang;
 	font-weight: 400;
-	padding: 1.3rem 1rem;
+	padding: 1.3rem 0.8rem;
 	text-align: center;
 	letter-spacing: 0.2em;
 }
@@ -386,7 +400,7 @@ body {
 
 .ui-datepicker-title {
 	padding: 0.625rem 1.563rem 0;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #e7bbbb;
 }
 
 .ui-datepicker-month {
@@ -533,7 +547,7 @@ body {
 
 .location-section {
 	padding: 3.125rem 0 3.124rem;
-	background-color: #f4f4f4;
+	background-color: #f9f3ed;
 }
 
 .location-section .head {
@@ -633,7 +647,7 @@ body {
 .location-section .info dl:first-child {
 	padding-top: 0;
 }
-
+/* 
 .location-section .info dt {
 	margin-bottom: 0.250rem;
 	font-family: Iropke Batang;
@@ -650,7 +664,7 @@ body {
 	line-height: 1rem;
 	color: #777;
 	white-space: pre-wrap;
-}
+} */
 
 
 .location-section .map-img {
@@ -712,7 +726,7 @@ body {
 	display: block;
 	width: calc(100% - 6.875rem);
 	height: 1px;
-	background-color: #0c0c0c;
+	background-color: #dfa76e;
 }
 
 .main .tbanner-section .text.vertical {
@@ -722,12 +736,27 @@ body {
 
 .main .info-section {
 	height: 100%;
-	background-color: #f4f4f4;
+	background-color: #f9f3ed;
 }
 
 .main .info-section .vertical-center {
 	height: 100%;
-	padding: 2.625rem 0 6.625rem;
+	padding: 2.625rem 0 3rem;
+}
+
+.info-section .vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	padding: 20px;
 }
 
 .main .info-section .vertical-item {
@@ -811,11 +840,13 @@ body {
 }
 .location-section .tinfo {
 	font-family: Iropke Batang;
+	padding: 0.5rem 0.4rem;
 }
 
 .tinfo dt {
 	font-family: Iropke Batang;
 	font-size: 0.9rem;
+	color: #ca9662;
 }
 
 .tinfo dd {
@@ -827,7 +858,7 @@ body {
 }
 
 .modern-button {
-	background-color: #f4f4f4;
+	background-color: #f9f3ed;
 	color: #fff;
 	border: none;
 	padding: 10px 15px;
