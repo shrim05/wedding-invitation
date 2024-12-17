@@ -139,7 +139,7 @@ body {
 	background: #55aaba;
 	color: #fff;
 	height: 2.5rem;
-	/* width: 3.75rem; */
+	width: 3.75rem;
 	font-size: 0.813rem;
 	font-family: 'Noto Sans KR';
 	align-items: last baseline;
@@ -885,8 +885,9 @@ body {
 	background-color: #fcf5f5;
 	border-radius: 4px;
 	display: inline-block;
-	width: 3.175rem;
-	height: 2.5rem;
+	/* width: 3.175rem;
+	height: 2.5rem; */
+	padding: 0.5rem;
 	background-size: 1rem;
 	font-size: 0.9rem;
 	/* line-height: 0; */
