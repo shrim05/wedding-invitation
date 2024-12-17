@@ -104,7 +104,6 @@ body {
 
 .accountCopy .form .group.col-2>div:last-child {
 	float: right;
-	;
 	font-family: 'Noto Sans KR';
 	font-size: 0.875rem;
 }
@@ -868,13 +867,11 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 
-
 .modern-button:hover {
 	background-color: #fff;
 	color: #000;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
 
 .copy-button {
 	background-color: #fcf5f5;
