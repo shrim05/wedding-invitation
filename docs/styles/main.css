@@ -130,8 +130,6 @@ body {
 	font-size: 1rem;
 	width: 70%;
 	height: 2.5rem;
-	/* border: 1px solid #eee; */
-	/* background: #f9f9f9; */
 	padding-top: 0.5rem;
 	padding-left: 0.875rem;
 	overflow: visible;
@@ -141,7 +139,7 @@ body {
 	background: #55aaba;
 	color: #fff;
 	height: 2.5rem;
-	width: 3.75rem;
+	/* width: 3.75rem; */
 	font-size: 0.813rem;
 	font-family: 'Noto Sans KR';
 	align-items: last baseline;
@@ -886,13 +884,12 @@ body {
 .copy-button {
 	background-color: #fcf5f5;
 	border-radius: 4px;
-	/* position: absolute; */
 	display: inline-block;
 	width: 3.175rem;
 	height: 2.5rem;
 	background-size: 1rem;
 	font-size: 0.9rem;
-	line-height: 0;
+	/* line-height: 0; */
 	font-family: Iropke Batang;
 	box-shadow: 0px 2px 4px rgb(199, 186, 186);
 	color: #171717;
