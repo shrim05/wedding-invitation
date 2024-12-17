@@ -159,11 +159,6 @@ body {
 	color: #3b3a3a;
 	cursor: pointer;
 }
-.close-btn:hover{
-	background-color: #fff;
-	color: #000;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
 
 .copyComplete .pop-body {
 	padding: 0 0 2.5rem;
@@ -865,7 +860,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+    font-size: 0.888rem;
 	font-family: Iropke Batang;
 	cursor: pointer;
 	border-radius: 4px;
@@ -873,8 +868,32 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 
+
 .modern-button:hover {
 	background-color: #fff;
 	color: #000;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+
+.copy-button {
+	background-color: #fcf5f5;
+	border-radius: 4px;
+	position: absolute;
+	display: inline-block;
+	width: 3.175rem;
+	height: 2.5rem;
+	background-size: 1rem;
+	font-size: 0.9rem;
+	line-height: 0;
+	font-family: Iropke Batang; 
+	box-shadow: 0px 2px 4px rgb(199, 186, 186);
+	color: #171717;
+	cursor: pointer;
+}
+.copy-button:hover {
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
