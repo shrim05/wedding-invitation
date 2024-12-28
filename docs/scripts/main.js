@@ -27,10 +27,11 @@ $(document).on("ready", function () {
 		loop: true,
 		thumbItem: 5,
 		slideMargin: 0,
-		enableDrag: false,
+		enableDrag: true,
 		enableSwipe: true,
 		currentPagerPosition: 'left',
 		useCss: true,
+
 		// centerSlide: true,
 		// adaptiveHeight: true,
 		onSliderLoad: function (el) {
