@@ -31,12 +31,14 @@ $(document).on("ready", function () {
 		enableSwipe: true,
 		currentPagerPosition: 'left',
 		useCss: true,
+		zoom: true,
 
 		// centerSlide: true,
 		// adaptiveHeight: true,
 		onSliderLoad: function (el) {
 			el.lightGallery({
-				selector: '#imageGallery .lslide'
+				selector: '#imageGallery .lslide',
+				plugins: ["lgZoom"]
 			});
 		}
 	});
