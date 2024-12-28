@@ -38,7 +38,7 @@ $(document).on("ready", function () {
 		onSliderLoad: function (el) {
 			el.lightGallery({
 				selector: '#imageGallery .lslide',
-				plugins: ["lgZoom"]
+				zoomFromOrigin: true
 			});
 		}
 	});

@@ -903,3 +903,9 @@ body {
 	color: #000;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+.lg-img-wrap {
+	touch-action: auto;
+}
+.lg-image {
+	touch-action: auto
+}
